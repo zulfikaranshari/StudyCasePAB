@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zulfikaranshari.zulfikaransharioktafinawan_1202153136_modul1.SecondActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="@string/title1"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="@string/title2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/menuHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="Menu" />
+
+    <TextView
+        android:id="@+id/menuPilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menuHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/hargaHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/menuHeader"
+        android:layout_below="@+id/menuPilih"
+        android:layout_marginTop="53dp"
+        android:text="Harga" />
+
+    <TextView
+        android:id="@+id/hargaPilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hargaHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="TextView"
+        android:textSize="20sp"/>
+</RelativeLayout>
