@@ -17,7 +17,7 @@
         android:textSize="36sp"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tempat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
@@ -30,7 +30,7 @@
         android:id="@+id/menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/tempat"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp"
         android:ems="10"

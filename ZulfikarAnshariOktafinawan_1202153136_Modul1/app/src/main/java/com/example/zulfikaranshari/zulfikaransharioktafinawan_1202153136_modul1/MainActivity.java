@@ -46,9 +46,8 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("menu", menu);
         intent.putExtra("totalharga", totalHarga);
         intent.putExtra("budget", budget);
-
-
-            startActivity(intent);
+        intent.putExtra("tempat", "Abnormal");
+        startActivity(intent);
 
 
 
@@ -65,10 +64,10 @@ public class MainActivity extends AppCompatActivity {
         totalHarga = jumlah *eatbusNasiUduk;
         Intent intent = new Intent(this, SecondActivity.class);
         intent.putExtra("menu", menu);
-        //intent.putExtra("jumlah", jumlah);
+        intent.putExtra("jumlah", jumlah);
         intent.putExtra("totalharga", totalHarga);
         intent.putExtra("budget", budget);
-
+        intent.putExtra("tempat", "Eatbus");
 
             startActivity(intent);
 

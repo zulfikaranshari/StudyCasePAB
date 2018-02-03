@@ -22,22 +22,31 @@ public class SecondActivity extends AppCompatActivity {
 
         TextView menuView = (TextView) findViewById(R.id.menuPilih);
         TextView hargaView = (TextView) findViewById(R.id.hargaPilih);
+        TextView jumlahView = (TextView) findViewById(R.id.jumlah);
+        TextView tempatView = (TextView) findViewById(R.id.tempat);
 
         Intent intent = getIntent();
         int pTotal = intent.getIntExtra("totalharga", 0);
         String total = Integer.toString(pTotal);
+
+        int jumlah = intent.getIntExtra("jumlah", 0);
+        String porsi = Integer.toString(jumlah);
+
         String pMenu = intent.getStringExtra("menu");
         int pBudget = intent.getIntExtra("budget", 0);
 
+        String pTempat = intent.getStringExtra("tempat");
 
         menuView.setText(pMenu);
         hargaView.setText(total);
-
+        jumlahView.setText(porsi);
         //Toast toast = new
         if (pBudget >= pTotal){
             murah.show();
+            tempatView.setText(pTempat);
         }else{
             mahal.show();
+            tempatView.setText(pTempat);
         }
     }
 }
